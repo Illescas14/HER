@@ -62,14 +62,10 @@
             font-weight: 900;
             margin-bottom: 30px;
             line-height: 1.2;
+            animation: glowText 2s ease-in-out infinite;
         }
 
-        .greetings > span {
-            display: inline-block;
-            animation: glow 2.5s ease-in-out infinite;
-        }
-
-        @keyframes glow {
+        @keyframes glowText {
             0%, 100% {
                 color: #fff;
                 text-shadow: 
@@ -78,26 +74,15 @@
                     0 0 40px #4da6ff,
                     0 0 80px #0066cc;
             }
-            10%, 90% {
-                color: #111;
-                text-shadow: none;
+            50% {
+                color: #fff;
+                text-shadow: 
+                    0 0 20px #66b3ff, 
+                    0 0 30px #66b3ff, 
+                    0 0 50px #66b3ff,
+                    0 0 100px #1a8cff;
             }
         }
-
-        .greetings > span:nth-child(1) { animation-delay: 0s; }
-        .greetings > span:nth-child(2) { animation-delay: .2s; }
-        .greetings > span:nth-child(3) { animation-delay: .4s; }
-        .greetings > span:nth-child(4) { animation-delay: .6s; }
-        .greetings > span:nth-child(5) { animation-delay: .8s; }
-        .greetings > span:nth-child(6) { animation-delay: 1s; }
-        .greetings > span:nth-child(7) { animation-delay: 1.2s; }
-        .greetings > span:nth-child(8) { animation-delay: 1.4s; }
-        .greetings > span:nth-child(9) { animation-delay: 1.6s; }
-        .greetings > span:nth-child(10) { animation-delay: 1.8s; }
-        .greetings > span:nth-child(11) { animation-delay: 2s; }
-        .greetings > span:nth-child(12) { animation-delay: 2.2s; }
-        .greetings > span:nth-child(13) { animation-delay: 2.4s; }
-        .greetings > span:nth-child(14) { animation-delay: 2.6s; }
 
         .description {
             font-family: "Dancing Script", cursive;
@@ -209,18 +194,16 @@
 <body>
     <div class="container">
         <div class="greetings">
-            <span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
-            <br>
-            <span>B</span><span>i</span><span>r</span><span>t</span><span>h</span><span>d</span><span>a</span><span>y</span>
+            Ashley<br>Nicholle
         </div>
         
         <div class="description">
-            <span>THIS IS FOR U ♡</span>
+            <span>This is for u ♡</span>
         </div>
         
         <div class="button">
             <button class="botones">
-                <a href="flower.html">TAP HERE</a>
+                <a href="flower.html">Tap here</a>
             </button>
         </div>
     </div>
